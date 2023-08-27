@@ -7,11 +7,20 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddParagraph("作者QQ:","397510573")
-  Tab:AddButton({
+
+
+Tab:AddButton({
   Name = "位置仪",
   Callback = function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/noob616161/czzgj/main/%E4%BD%8D%E7%BD%AE%E4%BB%AA.lua"))();
   end
-  })
+})
+
+Tab:AddButton({
+  Name = "Dex V3",
+  Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))();
+  end
+})
   
 OrionLib:Init()
